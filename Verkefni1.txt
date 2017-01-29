@@ -1,0 +1,63 @@
+Verkefni 1 - Vefþjónn og stillingar 5%
+
+1) 1.5%
+Digital Ocean
+Settu upp miðlara og stilltu þannig að hann getur keyrt php. búðu til og birtu í php skrá í vefrótinni "halló heimur!"
+
+Þrepin:
+
+	1) prófa skólanetfang Tækniskólans   http://www.tskoli.is/gott-ad-vita/afgreidsla-lykilorda/
+	2) bæta skólanetfangi við Github reikninginn þinn 
+	3) sækja um Stundentspack á Github og fá promocode fyrir Digital Ocean  https://education.github.com/pack
+	4) búa til reikning í Digital Ocean og "borga með korti" 5$ og virkja 50$ inneign  https://www.digitalocean.com/
+	5) Búa til Droplet  t.d. með one-click apps. Veldu t.d. LEMP on 16.04 5$ áskrift og veldu hostname fyrir miðlarann þinn. (þarft ekki SSH key strax)
+	6) Til að komast inná miðlarann sem þú bjóst til þá þarft þú SSH tengingu og að breyta lykilorðinun þínu. 
+		Ef þú ert á Windows vél þá þarftu að sækja PuttY til að geta tengst miðlaranum og breytt lykilorðinu http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html
+		þú fékkst UNIX lykilorð í email sem þú þarft að slá inn (virkar ekki að copy/paste). Lokaðu svo Putty.
+	7) Að nopa sftp filezilla client til að tengjast miðlara, þá þarf að passa að hann sé stilltur á sftp og með nýja lykilorðinu sem þú bjóst til. notendanafn er root. 
+	   ip talan á miðlara er að finna i Digital Ocean og emaili.	
+    8) Til að komast í vefrótina og breyta vefsíðunni þá þarftu að finna möppuna var á miðlaranum og þar er önnur mappa www og þar fyrir innan html mappa.
+    9) Breyttu vefsíðunni í hallo heimur.
+
+
+
+2) 1.5%
+Heroku
+Stofnaðu reikning á Heroku og fylgdu leiðbeiningunum á Heroku
+https://devcenter.heroku.com/articles/getting-started-with-php#introduction
+
+Það getur verið að þú verður beðin um að installa ýmsu öðru í leiðinni t.d. git.
+
+
+Ef þú lendir í vandræðum með að installa Composer þá gæti verið að þú þurfir að eiga við php.ini skránn í tölvunni þinni.
+en þú finnur hana í möppunni php7 eða álika ef þú ert að nota windows í C: rótinni eða program files.
+Það getur verið að skráinn heitir php.ini-production  (endurnefndu hana þá í php.ini)
+
+taktu út semikommur á eftirfarandi stöðum í php.ini skránni:
+
+	; On windows:
+	extension_dir = "ext"
+og
+
+	extension=php_openssl.dll
+
+
+
+3) 1%
+Búðu til Github reikning fyrir kóðann sem þú notar á öðrum hvorum miðlara
+Skoðaðu og lærðu á SSH og Git til að vinna með miðlara.
+
+
+
+Námsmat og skil
+Skilaðu mér eftirfarandi vefslóðum á Innu:
+	Vefslóð á miðlara á Digital Ocean.
+	Vefslóð á miðlara á Heroku.
+	Github slóð á kóða sem þú notaðir á Heroku eða Digital Ocean.
+
+
+Gefið er fullt fyrir fullnægjandi lausn, hálft fyrir lausn sem er ábótavant.
+
+
+
+

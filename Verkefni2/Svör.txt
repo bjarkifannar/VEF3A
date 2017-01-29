@@ -1,0 +1,93 @@
+### Hver er munurinn á public, protected, og private þegar kemur að property og methods? ###
+
+Það er hægt að breyta/nota public property og methods í gegn um instance af klasa.
+
+Dæmi um public:
+	class MyClass {
+		public $myProperty = 'Hello, World!';
+
+		public function myFunction() {
+			return $this->myProperty;
+		}
+	}
+
+	$mClass = new MyClass();
+	echo $mClass->myProperty; // Output: Hello, World!
+	echo $mClass->myFunction(); // Output: Hello, World!
+
+
+Það er ekki hægt að breyta/nota private property og methods fyrir utan klasann sem það er í.
+
+Dæmi um private:
+	class MyClass {
+		private $myProperty = 'Hello, World!';
+
+		public function myFunction() {
+			return $this->myProperty;
+		}
+	}
+
+	$mClass = new MyClass();
+	echo $mClass->myProperty; // Error
+	echo $mClass->myFunction(); // Hello, World!
+
+
+Properties og methods sem eru protected er hægt að breyta/nota í klasanum sem það er í og klösum sem extend-a hann.
+
+Dæmi um protected:
+	class MyBaseClass {
+		protected $myProperty = 'Hello';
+	}
+
+	class MyClass extends MyBaseClass {
+		public function __construct() {
+			$this->myProperty .= ', World!';
+		}
+
+		public function myFunction() {
+			return $this->myProperty;
+		}
+	}
+
+	$mClass = new MyClass();
+	echo $mClass->myProperty; // Error
+	echo $mClass->myFunction(); // Output: Hello, World!
+
+
+### Hvað er Inheritance? komdu með dæmi. ###
+
+Inheritance er þegar einn klasi erfir frá öðrum klasa.
+
+Dæmi:
+	class BaseClass {
+		private $myProperty = 'Hello, World!';
+
+		public function myFunction() {
+			return 'my function';
+		}
+	}
+
+	class MyClass extends BaseClass {
+		// Hefur aðgang að myProperty og myFunction
+
+		public function myOtherFunction() {
+			return $this->myProperty.' '.myFunction().', and my other function';
+		}
+	}
+
+	$mClass = new MyClass();
+	echo $mClass->myFunction(); // Output: my function
+	echo $mClass->myOtherFunction(); // Output: Hello, World! my function, and my other function
+
+### Hvað er autoloading? ###
+
+Autoloading sér um að hlaða inn klasa án þess að þurfa að nota include/require fyrir hvern klasa.
+
+### Af hverju ættir þú að nota OOP í PHP? Hvenær væri það hugsanlega heppilegt og
+	hvenær ekki? Rökstuddu svar þitt! ###
+
+Að nota OOP getur minnkað endurtekningu og hjálpað manni að halda kóðanum hreinum
+þannig að það sé auðveldara að vinna með hann.
+
+Það er hugsanlega heppilegt að nota OOP þegar það þarf að framkvæma sama hlutinn
+oftar en einu sinni.
