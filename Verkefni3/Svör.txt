@@ -1,0 +1,22 @@
+### Hvað er hönnunarmynstur? ###
+
+Hönnunarmynstur er mynstur fyrir uppbyggingu kóða til að auðveldara
+sé að laga, stækka, og endurnýta kóða.
+
+### Hvað er MVC? ###
+
+MVC (Model-View-Controller) er hönnunarmynstur sem notar Model, View, og Controller.
+
+Model geymir gögn sem View getur notað og Controller getur bætt við/uppfært.
+View sér um uppbyggingu og útlit gagna.
+Controller uppfærir Model.
+
+### Útskýrðu MVC í bakendavefþróun. ###
+
+Model sér um að geyma gögn fyrir View.
+View sýnir notandanum gögnin sem beðið var um.
+Controller fær user request og sér um það.
+
+### Útskýrðu MV* í framendavefþróun (SPA og client-side MVC). ###
+
+* í MV* er vegna þess að í framendavefþróun er ekki endilega controller
