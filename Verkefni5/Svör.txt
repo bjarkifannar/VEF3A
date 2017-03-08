@@ -1,0 +1,37 @@
+1. Útskýrðu eftirfarandi request verbs:
+	a) POST
+		POST er notað til að senda gögn á server án þess að sýna þau.
+		Til dæmis til að upload-a skrá eða fyrir lykilorð.
+
+	b) GET
+		GET er notað til að senda gögn á server í URL.
+		Til dæmis fyrir leitarfyrirspurn.
+
+	c) PUT
+		PUT setur skrá á ákveðinn URI
+
+	d) DELETE
+		DELETE eyðir skrá á ákveðnum URI
+
+2. Hvað er status code og hvað þýða eftirfarandi status codes?
+	Status code er svar frá server til að láta vita hvað gerðist
+	(t.d. hvort það hafi komið upp villa eða allt sé í lagi)
+
+	a) 200
+		Fyrirspurn gekk upp (engin villa)
+
+	b) 301
+		Vefsíða hefur verið færð og vafrinn á að fara á annað URI
+
+	c) 400
+		Serverinn getur ekki eða vill ekki sjá um beiðnina
+
+	d) 404
+		Síða finnst ekki
+
+	e) 500
+		Villa á server
+
+3. Hverjar eru helstu nýjungar og breytingar með HTTP 2.0?
+	HTTP 2.0 er hraðara en HTTP 1.1.
+	HTTP 2.0 þarf að nota HTTPS.
