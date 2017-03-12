@@ -1,12 +1,14 @@
 {
-	"myndir": [{
-		"title": "Deadpool",
-		"url": "http://www.imdb.com/title/tt1431045/?ref_=nv_sr_1"
-	}, {
-		"title": "The Godfather",
-		"url": "http://www.imdb.com/title/tt0068646/?ref_=nv_sr_1"
-	}, {
-		"title": "The Matrix",
-		"url": "http://www.imdb.com/title/tt0133093/?ref_=nv_sr_1"
-	}]
+	"0": {
+		"Title": "Deadpool",
+		"URL": "http://www.imdb.com/title/tt1431045/?ref_=nv_sr_1"
+	},
+	"1": {
+		"Title": "The Godfather",
+		"URL": "http://www.imdb.com/title/tt0068646/?ref_=nv_sr_1"
+	},
+	"2": {
+		"Title": "The Matrix",
+		"URL": "http://www.imdb.com/title/tt0133093/?ref_=nv_sr_1"
+	}
 }
