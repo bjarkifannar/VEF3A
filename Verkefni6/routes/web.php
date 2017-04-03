@@ -11,6 +11,10 @@
 |
 */
 
+Route::get('/', function() {
+	return view('welcome');
+});
+
 Route::get('/tasks', function () {
 	$tasks = App\Task::all();
 
