@@ -1,0 +1,3 @@
+Vídeó 1 - 7 á https://laracasts.com/series/laravel-from-scratch-2017
+
+Hjálpa Styrmi með vandamál sem tengdust Laravel.
